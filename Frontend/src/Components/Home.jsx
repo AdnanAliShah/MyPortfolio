@@ -72,6 +72,7 @@ const Home = () => {
             initial={{ opacity: 0, x: -50 }} 
             animate={{ opacity: 1, x: -10 }} 
             transition={{ duration: 0.8 }} 
+            whileHover={{scale: 1.2}}
             src={img} 
             alt="Profile" 
             className="w-40 h-40 rounded-full border-4 border-blue-500 shadow-lg"
@@ -80,7 +81,8 @@ const Home = () => {
             initial={{ opacity: 0, x: 50 }} 
             animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.8 }} 
-            className="md:ml-10 mt-6 md:mt-0 text-center md:text-left"
+            whileHover={{scale: 1.1}}
+            className="md:ml-20 mt-6 md:mt-0 text-center md:text-left"
           >
             <h2 className="text-gray-400 text-2xl font-bold mt-2">
               A passionate web developer creating interactive experiences.
@@ -90,6 +92,26 @@ const Home = () => {
             </p>
           </motion.div>
         </div>
+        <div className="mt-12 flex flex-wrap justify-center gap-10 text-center">
+        <motion.div 
+        whileHover={{scale: 1.1}}
+        className="bg-gray-800 px-6 py-4 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-bold text-blue-400">5+</h3>
+          <p className="text-gray-400">Years of Experience</p>
+        </motion.div>
+        <motion.div 
+        whileHover={{scale: 1.1}}
+        className="bg-gray-800 px-6 py-4 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-bold text-blue-400">50+</h3>
+          <p className="text-gray-400">Projects Completed</p>
+        </motion.div>
+        <motion.div
+        whileHover={{scale: 1.1}}
+        className="bg-gray-800 px-6 py-4 rounded-lg shadow-lg">
+          <h3 className="text-2xl font-bold text-blue-400">100%</h3>
+          <p className="text-gray-400">Client Satisfaction</p>
+        </motion.div>
+      </div>
       </section>
 
       {/* Skills Section */}
@@ -134,6 +156,8 @@ const Home = () => {
             "Hey there! Working with Adnan was an absolute pleasure! His attention to detail, creativity, and professionalism exceeded my expectations."
           </p>
         </motion.div>
+        
+      
       </section>
 
       {/* Footer */}
